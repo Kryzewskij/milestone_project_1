@@ -29,20 +29,11 @@ span {
     margin-right: 20px;
 }
 
-.reset {
-    background-color: orange;
-    margin-right: 50px;
-    width: 350px;
-    height: 250px;
-    font-size: 100px;
-    border-radius: 25px;
-}
-
 .play {
     background-color: greenyellow;
     width: 350px;
     height: 250px;
-    font-size: 100px;
+    font-size: 50px;
     border-radius: 25px;
 
 }
