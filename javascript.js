@@ -10,37 +10,35 @@ const symbols = [
  "Bar", // 8
 ];
 
-const chooseRandom1 = (symbols, num) => {
-    const result1 = [];
-    for(let i = 0; i < num; i++ ){
-       const random = Math.floor(Math.random() * symbols.length);
-       console.log(random);
-       result1.push(symbols[random]);  
-    }; 
-    return result1;
- };
- console.log(chooseRandom1(symbols, 1), "line 33");
 
- const chooseRandom2 = (symbols, num) => {
-    const result2 = [];
-    for(let i = 0; i < num; i++ ){
-       const random = Math.floor(Math.random() * symbols.length);
-       console.log(random);
-       result2.push(symbols[random]);  
-    }; 
-    return result2;
+   document.getElementById("playbutton").addEventListener("click", click);
+   
+   function click() {
+   document.getElementById("slot1").innerHTML = slot1;
+   document.getElementById("slot2").innerHTML = slot2;
+   document.getElementById("slot3").innerHTML = slot3;
+   
  };
- console.log(chooseRandom2(symbols, 1), "line 33");
+ console.log(click);
 
- const chooseRandom3 = (symbols, num) => {
-    const result3 = [];
+
+const chooseRandom = (symbols, num) => {
+    const result = [];
     for(let i = 0; i < num; i++ ){
        const random = Math.floor(Math.random() * symbols.length);
        console.log(random);
-       result3.push(symbols[random]);  
+       result.push(symbols[random]);  
     }; 
-    return result3;
+    return result;
  };
- console.log(chooseRandom3(symbols, 1), "line 33");
 
  
+
+ const slot1 = chooseRandom(symbols, 1)
+ console.log(slot1, 'line 24');
+ 
+ const slot2 = chooseRandom(symbols, 1);
+ console.log(slot2, 'line 26');
+
+ const slot3 = chooseRandom(symbols, 1);
+ console.log(slot3, 'line 30');
