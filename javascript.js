@@ -9,7 +9,17 @@ const symbols = [
  "Orange", // 7
  "Bar", // 8
 ];
-   document.getElementById("playButton").addEventListener("click", clickPlay);
+
+   var slot1 = chooseRandom(symbols, 1);
+   var slot2 = chooseRandom(symbols, 1);
+   var slot3 = chooseRandom(symbols, 1);
+   const playButton = document.getElementById("playButton");
+   const resetButton = document.getElementById("resetButton")
+   
+
+   //document.getElementById("playButton").addEventListener("click", clickPlay);
+
+   playButton.addEventListener("click", clickPlay); 
 
    function clickPlay() {
       document.getElementById("slot1").innerHTML = slot1;
@@ -17,24 +27,29 @@ const symbols = [
       document.getElementById("slot3").innerHTML = slot3;
       };
       
-   function chooseRandom(symbols, num) {
-   const result = [];
-   for (let i = 0; i < num; i++) {
-      const random = Math.floor(Math.random() * symbols.length);
+   function chooseRandom(symbols) {
+      var result = [];
+      var random = Math.floor(Math.random() * symbols.length);
       result.push(symbols[random]);
+      return result;
    };
-   return result;
+   resetButton.addEventListener("click", reset)
+    function reset() {
+        if(slot1 !== "?" && slot2!== "?" && slot3 !== "?") {
+            //message.innerHTML = "";
+            chooseRandom();
+        }
+    }
 
-};   
 
-   const slot1 = chooseRandom(symbols, 1)
-   console.log(slot1);
    
-   const slot2 = chooseRandom(symbols, 1);
-   console.log(slot2);
+
   
-   const slot3 = chooseRandom(symbols, 1);
-   console.log(slot3);
+
+
+   
+
+   
 
    
 
