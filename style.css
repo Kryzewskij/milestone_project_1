@@ -1,9 +1,13 @@
 h1 {
-    background-color: rgb(91, 24, 200);
+    padding: auto;
+    display: flexbox;
+    background-color: rgb(163, 116, 239);
     text-align: center;
-    font-size: 150px;
+    font-size: 50px;
     margin-bottom: 100px;
     margin-top: 5px;
+    border: 5px solid black;
+    border-radius: 25px;
 }
 
 .center {
@@ -30,11 +34,11 @@ span {
     height: 250px;
     padding: 20px;
     border: 10px solid rgb(237, 229, 67);    
-    background-color: rgb(214, 104, 234); 
+    background-color: rgb(234, 238, 191); 
     text-align: center;
     font-size: 45px;
     border-radius: 25px;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 33px;
     font-family: cursive;
@@ -88,8 +92,21 @@ span {
     display:flexbox
     background-color: royalblue; 
     text-align: center;
+    color: darkblue;
     font-size: 50px;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 25px;
     padding: auto;
+}
+#winLoseRatio {
+    display: flexbox;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+#gamesPlayed {
+    display: flexbox;
+    margin-top: 10px;
+    font-size: 20px;
 }
