@@ -16,7 +16,7 @@ const symbols = [
       document.getElementById("slot2").innerHTML = slot2;
       document.getElementById("slot3").innerHTML = slot3;
       };
-
+      
    function chooseRandom(symbols, num) {
    const result = [];
    for (let i = 0; i < num; i++) {
