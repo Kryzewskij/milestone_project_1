@@ -12,7 +12,9 @@ const symbols = [
    
    
    const playButton = document.getElementById("playButton");
-   const resetButton = document.getElementById("resetButton")
+   const resetButton = document.getElementById("resetButton");
+   const message = document.getElementById("message");
+
 
    playButton.addEventListener("click", clickPlay); 
 
@@ -23,13 +25,20 @@ const symbols = [
       document.getElementById("slot1").innerHTML = slot1;
       document.getElementById("slot2").innerHTML = slot2;
       document.getElementById("slot3").innerHTML = slot3;
+      if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
+         message.innerHTML = "Congratulations, YOU WON!!!!!"
+     } else {
+      message.innerHTML = "Sorry, you lost!"
+     }
       }; 
    function chooseRandom(symbols) {
-      var result = [];
+      var result = "";
       var random = Math.floor(Math.random() * symbols.length);
-      result.push(symbols[random]);
-      return result;
+      result = (symbols[random]);
+      
+     return result;
    };
+
 
    resetButton.addEventListener("click", reset);
 
