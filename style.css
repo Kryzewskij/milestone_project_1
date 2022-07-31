@@ -2,39 +2,94 @@ h1 {
     background-color: rgb(91, 24, 200);
     text-align: center;
     font-size: 150px;
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 7px solid #002e05;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 div {
+   background-color: lightgreen;
    margin: 300px; 
    margin-top: 25px;
+   margin-left: 100px;
+   padding: auto;
+   margin-bottom: 10px;
+
 }
 
 span {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     padding: 20px;
     border: 10px solid rgb(237, 229, 67);    
-    background-color: rgb(83, 166, 10); 
+    background-color: rgb(214, 104, 234); 
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     border-radius: 25px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    margin-left: 33px;
+    font-family: cursive;
 }
 
 .slot1 {
     margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    padding-top: 3px;
+    text-align: center;
+    
 }
 
 .slot2 {
     margin-right: 20px;
+    margin-bottom: 5px;
 }
 
-#playButton{
+.slot3 {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+#playButton {
     display: inline-block;
     background-color: rgb(23, 61, 214);
     width: 150px;
     height: 100px;
     font-size: 20px;
     border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 275px;
+    
 
+}
+#resetButton {
+    display: inline-block;
+    background-color: rgb(225, 229, 22);
+    width: 150px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+
+}
+#message {
+    display:flexbox
+    background-color: royalblue; 
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    padding: auto;
 }
