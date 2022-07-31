@@ -11,8 +11,8 @@ div {
 
 span {
     display: inline-block;
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     padding: 20px;
     border: 10px solid rgb(237, 229, 67);    
     background-color: rgb(83, 166, 10); 

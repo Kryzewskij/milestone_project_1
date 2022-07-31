@@ -1,13 +1,34 @@
-const symbols = [
-"Big Win", // 0
-"Banana", // 1
-"7", // 2
-"Plum", // 3
-"Water Melon",// 4
-"Lemon", // 5
- "Cherry", // 6
- "Orange", // 7
- "Bar", // 8
+const symbols = 
+// [
+//    "Big Win",
+//    "Banana",
+//    "7",
+//    "Plum",
+//    "Water Melon",
+//    "Lemon",
+//    "Cherry",
+//    "Orange",
+//    "Bar",
+// ];
+[
+{name:"Big Win", 
+image: 'assets/bigWin.png',},
+{name:"Banana", 
+image: 'assets/banana.jpg',},
+{name:"7", 
+image: 'assets/seven.jpg',},
+{name:"Plum", 
+image: 'assets/plum.jpeg',},
+{name:"Water Melon",
+image: 'assets/watermellon.jpeg',},
+{name:"Lemon", 
+image: 'assets/lemon.jpeg',},
+{name:"Cherry", 
+image: 'assets/cherry.jpeg',}, 
+{name:"Orange", 
+image: 'assets/orange.jpeg',},
+{name:"Bar", 
+image: 'assets/bar.png',},
 ];
    
    
@@ -38,6 +59,7 @@ const symbols = [
       var result = "";
       var random = Math.floor(Math.random() * symbols.length);
       result = (symbols[random]);
+      console.log(result);
       
      return result;
    };
