@@ -27,8 +27,11 @@ const symbols = [
       document.getElementById("slot3").innerHTML = slot3;
       if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
          message.innerHTML = "Congratulations, YOU WON!!!!!"
+     } else if 
+      (slot1 === slot2 || slot1 === slot3 || slot2 === slot3) {
+      message.innerHTML = "You got 2 out 3...Not to bad!"
      } else {
-      message.innerHTML = "Sorry, you lost!"
+      message.innerHTML = "You Lost!"
      }
       }; 
    function chooseRandom(symbols) {
