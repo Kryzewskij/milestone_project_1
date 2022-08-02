@@ -47,7 +47,9 @@ image: 'assets/bar.png',},
       document.getElementById("slot1").innerHTML = slot1.name;
       document.getElementById("slot1").style.backgroundImage = `url(${slot1.image})`;
       document.getElementById("slot2").innerHTML = slot2.name;
+      document.getElementById("slot2").style.backgroundImage = `url(${slot2.image})`;
       document.getElementById("slot3").innerHTML = slot3.name;
+      document.getElementById("slot3").style.backgroundImage = `url(${slot3.image})`;
      console.log(gamesPlayed);
       if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
          message.innerHTML = "Congratulations, YOU WON!!!!!"
