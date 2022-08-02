@@ -35,7 +35,8 @@ image: 'assets/bar.png',},
    const playButton = document.getElementById("playButton");
    const resetButton = document.getElementById("resetButton");
    const message = document.getElementById("message");
-   const gamesPlayed = document.getElementById("gamesPlayed");
+   var gamesPlayed = document.getElementById("gamesPlayed");
+   var playClicked = 0;
 
 
    playButton.addEventListener("click", clickPlay); 
@@ -51,6 +52,11 @@ image: 'assets/bar.png',},
       document.getElementById("slot3").innerHTML = slot3.name;
       document.getElementById("slot3").style.backgroundImage = `url(${slot3.image})`;
      console.log(gamesPlayed);
+     
+      playButton.onclick = function () {
+      playClicked++;
+      gamesPlayed.innerHTML = playClicked;
+      }
       if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
          message.innerHTML = "Congratulations, YOU WON!!!!!"
      } else if 
