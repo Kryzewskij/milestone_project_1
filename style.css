@@ -89,8 +89,8 @@ span {
 
 }
 #message {
-    display:flexbox
-    background-color: royalblue; 
+    display: flexbox;
+    background-color: lightgreen; 
     text-align: center;
     color: darkblue;
     font-size: 50px;

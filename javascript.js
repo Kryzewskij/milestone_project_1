@@ -1,40 +1,41 @@
 const symbols = 
-[
-   "Big Win",
-   "Banana",
-   "7",
-   "Plum",
-   "Water Melon",
-   "Lemon",
-   "Cherry",
-   "Orange",
-   "Bar",
-];
 // [
-// {name:"Big Win", 
-// image: 'assets/bigWin.png',},
-// {name:"Banana", 
-// image: 'assets/banana.jpg',},
-// {name:"7", 
-// image: 'assets/seven.jpg',},
-// {name:"Plum", 
-// image: 'assets/plum.jpeg',},
-// {name:"Water Melon",
-// image: 'assets/watermellon.jpeg',},
-// {name:"Lemon", 
-// image: 'assets/lemon.jpeg',},
-// {name:"Cherry", 
-// image: 'assets/cherry.jpeg',}, 
-// {name:"Orange", 
-// image: 'assets/orange.jpeg',},
-// {name:"Bar", 
-// image: 'assets/bar.png',},
+//    "Big Win",
+//    "Banana",
+//    "7",
+//    "Plum",
+//    "Water Melon",
+//    "Lemon",
+//    "Cherry",
+//    "Orange",
+//    "Bar",
 // ];
+[
+{name:"Big Win", 
+image: 'assets/bigWin.png',},
+{name:"Banana", 
+image: 'assets/banana.jpg',},
+{name:"7", 
+image: 'assets/seven.jpg',},
+{name:"Plum", 
+image: 'assets/plum.jpeg',},
+{name:"Water Melon",
+image: 'assets/watermellon.jpeg',},
+{name:"Lemon", 
+image: 'assets/lemon.jpeg',},
+{name:"Cherry", 
+image: 'assets/cherry.jpeg',}, 
+{name:"Orange", 
+image: 'assets/orange.jpeg',},
+{name:"Bar", 
+image: 'assets/bar.png',},
+];
    
    
    const playButton = document.getElementById("playButton");
    const resetButton = document.getElementById("resetButton");
    const message = document.getElementById("message");
+   const gamesPlayed = document.getElementById("gamesPlayed");
 
 
    playButton.addEventListener("click", clickPlay); 
@@ -43,9 +44,11 @@ const symbols =
       let slot1 = chooseRandom(symbols, 1);
       let slot2 = chooseRandom(symbols, 1);
       let slot3 = chooseRandom(symbols, 1);
-      document.getElementById("slot1").innerHTML = slot1;
-      document.getElementById("slot2").innerHTML = slot2;
-      document.getElementById("slot3").innerHTML = slot3;
+      document.getElementById("slot1").innerHTML = slot1.name;
+      document.getElementById("slot1").style.backgroundImage = `url(${slot1.image})`;
+      document.getElementById("slot2").innerHTML = slot2.name;
+      document.getElementById("slot3").innerHTML = slot3.name;
+     console.log(gamesPlayed);
       if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
          message.innerHTML = "Congratulations, YOU WON!!!!!"
      } else if 
@@ -59,12 +62,9 @@ const symbols =
       var result = "";
       var random = Math.floor(Math.random() * symbols.length);
       result = (symbols[random]);
-      console.log(result);
-      
+      console.log(result);  
      return result;
    };
-
-
    resetButton.addEventListener("click", reset);
 
     function reset() {
