@@ -51,7 +51,6 @@ image: 'assets/bar.png',},
       document.getElementById("slot2").style.backgroundImage = `url(${slot2.image})`;
       document.getElementById("slot3").innerHTML = slot3.name;
       document.getElementById("slot3").style.backgroundImage = `url(${slot3.image})`;
-     console.log(gamesPlayed);
      
       playButton.onclick = function () {
       playClicked++;
@@ -69,8 +68,7 @@ image: 'assets/bar.png',},
    function chooseRandom(symbols) {
       var result = "";
       var random = Math.floor(Math.random() * symbols.length);
-      result = (symbols[random]);
-      console.log(result);  
+      result = (symbols[random]);  
      return result;
    };
    resetButton.addEventListener("click", reset);
@@ -78,5 +76,6 @@ image: 'assets/bar.png',},
     function reset() {
          document.getElementById("slot1").innerHTML = "Slot 1";
          document.getElementById("slot2").innerHTML = "Slot 2";
-         document.getElementById("slot3").innerHTML = "Slot 3";  
+         document.getElementById("slot3").innerHTML = "Slot 3";
+         document.getElementById("gamesPlayed").innerHTML = 0;   
     }
