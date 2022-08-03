@@ -42,6 +42,7 @@ span {
     margin-top: 0px;
     margin-left: 118px;
     font-family: cursive;
+    color: darkblue;
 }
 
 .slot1 {
@@ -50,6 +51,7 @@ span {
     margin-left: 30px;
     padding-top: 3px;
     text-align: center;
+    
     
 }
 
@@ -108,5 +110,7 @@ span {
 #gamesPlayed {
     display: flexbox;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 50px;
+    color:rgb(237, 6, 14);
+    
 }

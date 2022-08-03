@@ -31,13 +31,11 @@ image: 'assets/orange.jpeg',},
 image: 'assets/bar.png',},
 ];
    
-   
    const playButton = document.getElementById("playButton");
    const resetButton = document.getElementById("resetButton");
    const message = document.getElementById("message");
    var gamesPlayed = document.getElementById("gamesPlayed");
    var playClicked = 0;
-
 
    playButton.addEventListener("click", clickPlay); 
 
@@ -51,11 +49,12 @@ image: 'assets/bar.png',},
       document.getElementById("slot2").style.backgroundImage = `url(${slot2.image})`;
       document.getElementById("slot3").innerHTML = slot3.name;
       document.getElementById("slot3").style.backgroundImage = `url(${slot3.image})`;
-     
-      playButton.onclick = function () {
+
+     playButton.onclick = function () {
       playClicked++;
       gamesPlayed.innerHTML = playClicked;
       }
+     
       if (slot1 === slot2  && slot1 === slot3 && slot2  === slot3) {
          message.innerHTML = "Congratulations, YOU WON!!!!!"
      } else if 
@@ -63,7 +62,7 @@ image: 'assets/bar.png',},
       message.innerHTML = "You got 2 out 3...Not to bad!"
      } else {
       message.innerHTML = "You Lost!"
-     }
+     } 
       }; 
    function chooseRandom(symbols) {
       var result = "";
@@ -71,6 +70,7 @@ image: 'assets/bar.png',},
       result = (symbols[random]);  
      return result;
    };
+
    resetButton.addEventListener("click", reset);
 
     function reset() {
